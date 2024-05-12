@@ -35,6 +35,9 @@ spl-token-metadata-interface = { version = "0.3.3", path = "../../token-metadata
 spl-transfer-hook-interface = { version = "0.6.3", path = "../transfer-hook/interface" }
 thiserror = "1.0"
 
+[patch.crates-io.curve25519-dalek]
+git = "https://github.com/Lythiuum/curve25519-dalek.git"
+
 [features]
 default = ["display"]
 display = ["dep:solana-cli-output"]
